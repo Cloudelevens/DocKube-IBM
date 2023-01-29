@@ -9,6 +9,9 @@ docker run -d -P alpine --> stops after running as there is no we server or any 
 docker images --> list of all downloaded images
 docker rm --> to remove all the container
 docker inspect <conainer ID> --> to get the details of your container
+docker logs <container ID>
+docker logs -f <container ID> --> live streaminmg ( follow)
+
 -------------------------------------------
 docker exce -it <container id> bash --> to go inside container
 cd /usr/share/nginx/html/
