@@ -1,0 +1,9 @@
+docker swarm init --> to make a node as master
+docker swarm leave --force --> to remove a node from swarm cluster
+docker node ls
+hostnamectl set-hostname master --> to set user name 
+docker service create --name svc1 --replicas 4 -p 1234:80 nginx --> to create docker service
+docker service ls --> to chek the list of services
+docker service ps svc1 --> it shows where the container are running
+docker service scale --replicas 6 svc1(service name) --> to increase the number of instance 
+docker swarm join-token worker ---> if want the token connection to add new node as worker
