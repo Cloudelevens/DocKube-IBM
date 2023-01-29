@@ -11,3 +11,5 @@ docker-compose -v
 docker-compose up -d  ---> run multiple containers using yaml file
 docker-compose up -d -- scale webserver=2 --scale appserver=2 -d ---> run multiple containers using yaml file ( run 2 conmtainer)
 docker compose down ----> deletes the container
+
+docker-compose -f dc.yml up -d
