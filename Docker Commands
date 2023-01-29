@@ -1,0 +1,87 @@
+docker version
+docker pull nginx
+docker run -d -P nginx --> to assign port number of the docker host and then docker host redirects to docker container
+docker run -d -p 1234:80 nginx --> to assign user define port.
+docker stats --no-stream --> to get resource( cpu) utilization.
+docker ps -- to list running containers
+docker ps -a --> to list all containers
+docker run -d -P alpine --> stops after running as there is no we server or any command to run as it is plain vanillawhile Nginx has a web server installed so it runs
+docker images --> list of all downloaded images
+docker rm --> to remove all the container
+docker inspect <conainer ID> --> to get the details of your container
+-------------------------------------------
+docker exce -it <container id> bash --> to go inside container
+cd /usr/share/nginx/html/
+ls
+vi index.html
+apt-get install -y vim
+----------------------------------------------
+
+ sudo apt-get update
+    2  sudo apt-get install  ca-certificates     curl     gnupg     lsb-release
+    3  sudo mkdir -p /etc/apt/keyrings
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    5  sudo mkdir -p /etc/apt/keyrings
+    6  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    7  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    8    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    9  sudo apt-get update
+   10  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   11  sudo docker run hello-world
+   12  docker version
+   13  service docker status
+   14  docker pull nginx
+   15  pull alpine
+   16  docker pull alpine
+   17  docker image
+   18  docker images
+   19  docker run -d -p nginx
+   20  docker run -d -p nginx a99a39d070bf
+   21  docker run -d -p nginx
+   22  docker run -d -P nginx
+   23  docker ps
+   24  docker run -d -P nginx
+   25  docker ps
+   26  docker run -d -P leaddevops/petclinic
+   27  docker ps
+   28  docker stats --no-stream
+   29  cat /etc/os-release
+   30  java -version
+   31  docker stats --no-stream
+   32  docker run nginx
+   33  docker ps
+   34  docker kill
+   35  docker ps -a
+   36  docker ps
+   37  docker kill 3756e516bb36
+   38  docker kill 8e7972d98fd9
+   39  kdocker ps
+   40  docker ps
+   41  docker kill fbf50a32b784
+   42  docker ps
+   43  docker run ingnx -p
+   44  docker run -d nginx
+   45  docker ps
+   46  docker run -d alpine
+   47  docker ps
+   48  docker ps -a
+   49  docker ps
+   50  docker run -d --name vijendra nginx
+   51  docker ps
+   52  docker rm -f docker ps -aq
+   53  docker rm -f `docker ps -aq`
+   54  docker ps
+   55  docker ps -aq
+   56  docker run -d --name vijendra nginx
+   57  docker ps
+   58  docker inspect
+   59  docker inspect e2d1a79bad9a
+   60  docker run -d -p --name vijendra nginx
+   61  docker run -d -P --name vijendra nginx
+   62  docker run -d -P --name vijendra1 nginx
+   63  docker ps
+   64  docker exec -it 434847bf73b4
+   65  docker exec -it 434847bf73b4 bash
+   66  docker ps
+   67  docker exec -it 434847bf73b4 bash
+   68  history
