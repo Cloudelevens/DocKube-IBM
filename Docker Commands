@@ -2,6 +2,9 @@ docker version
 docker pull nginx
 docker run -d -P nginx --> to assign port number of the docker host and then docker host redirects to docker container
 docker run -d -p 1234:80 nginx --> to assign user define port.
+docker run -d -P --restart always nginx --> if docer engine or service is restarted then container will go down and it will not restart automaticvaly. 
+                                            this command is used to restatrt always.
+service docker restart --> to restart docker service
 docker stats --no-stream --> to get resource( cpu) utilization.
 docker ps -- to list running containers
 docker ps -a --> to list all containers
